@@ -1,5 +1,5 @@
 # HappyThoughts
-
+_______________________________________
 HappyThoughts is a bot that uses an UNOFFICIAL ChatGPT api to tweet a positive message once a day.
 _______________________________________
 INSTRUCTIONS
