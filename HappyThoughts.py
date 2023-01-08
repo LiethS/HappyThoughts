@@ -10,7 +10,7 @@ def execute():
     gpt_api = ChatGPT(session_token=AUTH, conversation_id=CONV_ID)
     #gpt_api = ChatGPT(email=EMAIL, password=PASSWORD, conversation_id=CONV_ID) #You can use login information to authenticate
     prompt = gpt_api.send_message('give me todays positive tweet, start it by saying \"Today\'s positive message is:\" and do not create any new lines. MAKE SURE YOU Keep your response under 150 characters')
-    twitter_api.update_status(prompt['message'][0:280] + "#Happythoughts #Positivity")
+    twitter_api.update_status(prompt['message'][0:280])
     gpt_api.refresh_chat_page()
     gpt_api.driver.close()
 
